@@ -11,8 +11,8 @@
 #                                                                             #
 # ########################################################################### #
 
-def ft_harvest_total():
+def ft_harvest_total() -> None:
     d1 = int(input("Day 1 harvest: "))
-    d2 = int(input("\nDay 2 harvest: "))
-    d3 = int(input("\nDay 3 harvest: "))
-    print("\n Total harvest: " + str(d1 + d2 + d3))
+    d2 = int(input("Day 2 harvest: "))
+    d3 = int(input("Day 3 harvest: "))
+    print("Total harvest: " + str(d1 + d2 + d3))
