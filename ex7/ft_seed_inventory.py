@@ -12,14 +12,14 @@
 # ########################################################################### #
 
 def ft_seed_inventory(seed_type: str, quantity: int, unit: str) -> None:
-    if (seed_type == "tomato"):
+    if (unit == "packets"):
         print(seed_type.capitalize() + " seeds: " + str(quantity)
               + " " + unit + " available")
-    elif (seed_type == "carrot"):
+    elif (unit == "grams"):
         print(seed_type.capitalize() + " seeds: " + str(quantity)
               + " " + unit + " total")
-    elif (seed_type == "lettuce"):
-        print(seed_type.capitalize() + " seeds: " + str(quantity)
-              + " " + unit + " meters")
+    elif (unit == "area"):
+        print(seed_type.capitalize() + " seeds: covers" + str(quantity)
+              + " " + unit + " square meters")
     else:
         print("Unknown unit type")
